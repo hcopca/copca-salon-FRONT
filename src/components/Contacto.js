@@ -1,8 +1,9 @@
 import React from "react";
-
+import Navbar from "./Navbar";
 export default function Contacto() {
   return (
     <>
+      <Navbar />
       <div class="bg-white">
         <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">

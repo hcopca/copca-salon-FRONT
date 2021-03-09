@@ -5,16 +5,13 @@ export default function HomeMitad() {
     <div>
       <div class="relative bg-white py-16 sm:py-24 lg:py-32">
         <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 class="text-base font-semibold tracking-wider text-indigo-600 uppercase">
-            Deploy faster
-          </h2>
+          <h2 class="text-base font-semibold tracking-wider text-indigo-600 uppercase"></h2>
           <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-            Everything you need to deploy your app
+            – Tu evento como mejor lo prefieras –
           </p>
           <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-            Phasellus lorem quam molestie id quisque diam aenean nulla in.
-            Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-            condimentum id viverra nulla.
+            ¿Te gustaría agregar o quitar servicios? Agenda una cita y
+            platicanos como te gustaria que fuera ese gran día.
           </p>
           <div class="mt-12">
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -40,11 +37,10 @@ export default function HomeMitad() {
                       </span>
                     </div>
                     <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                      Push to Deploy
+                      7 hrs de servicio del salón
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Horas extra se cobra por separado
                     </p>
                   </div>
                 </div>
@@ -72,11 +68,10 @@ export default function HomeMitad() {
                       </span>
                     </div>
                     <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                      SSL Certificates
+                      Servicio de meseros.
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      2 meseros por cada 3 mesas
                     </p>
                   </div>
                 </div>
@@ -104,11 +99,10 @@ export default function HomeMitad() {
                       </span>
                     </div>
                     <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                      Simple Queues
+                      Centros de mesa.
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Florales o con globos
                     </p>
                   </div>
                 </div>
@@ -136,11 +130,10 @@ export default function HomeMitad() {
                       </span>
                     </div>
                     <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                      Advanced Security
+                      Montaje de mesas y sillas.
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Cuadradas o redondas, mantelería y salas longue
                     </p>
                   </div>
                 </div>
@@ -174,11 +167,10 @@ export default function HomeMitad() {
                       </span>
                     </div>
                     <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                      Powerful API
+                      Comida o cena formal
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      4 tiempos incluyendo postre
                     </p>
                   </div>
                 </div>
@@ -206,11 +198,10 @@ export default function HomeMitad() {
                       </span>
                     </div>
                     <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
-                      Database Backups
+                      Una hora de amenización.
                     </h3>
                     <p class="mt-5 text-base text-gray-500">
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Durante los alimentos. Sax, violín o piano.
                     </p>
                   </div>
                 </div>

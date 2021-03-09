@@ -1,5 +1,6 @@
 import { cloneElement, React, useState } from "react";
 import MY_SERVICE from "../services/index";
+import Navbar from "./Navbar";
 
 export default function Signup() {
   const [form, setForm] = useState({});
@@ -19,6 +20,7 @@ export default function Signup() {
 
   return (
     <>
+      <Navbar />
       <div class="font-sans antialiased bg-grey-lightest">
         <div class="w-full bg-green fixed shadow z-1">
           <div class="container mx-auto">
@@ -156,7 +158,7 @@ export default function Signup() {
             <div class="container mx-auto text-center px-8">
               <p class="text-grey-dark mb-2 text-sm">
                 Este es un producto de{" "}
-                <span class="font-bold">Salón Gallo</span>
+                <span class="font-bold">Salones Aspen</span>
               </p>
             </div>
           </footer>
