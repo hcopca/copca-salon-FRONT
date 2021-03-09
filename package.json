@@ -3,16 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.1.1",
     "axios": "^0.19.0",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "react-router-dom": "^5.1.1",
-    "react-scripts": "3.1.2"
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start --verbose",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -29,5 +30,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   }
 }
