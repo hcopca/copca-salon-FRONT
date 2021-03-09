@@ -14,9 +14,7 @@ export default function Signup() {
 
   const submit = (e) => {
     e.persist();
-    MY_SERVICE.signup(form).then(({ data }) => {
-      console.log(data);
-    });
+    MY_SERVICE.signup(form).then(({ data }) => {});
   };
 
   return (
