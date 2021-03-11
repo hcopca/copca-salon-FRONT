@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import EVENTO_SERVICE from "../services/eventos";
 import MY_SERVICE from "../services/index";
+import GENERAL_SERVICE from "../services/upload";
 
 import Side from "./Side";
 
 export const CrearEvento = () => {
   const [form, setForm] = useState({});
-
+  const [img, setImg] = useState(null);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -28,11 +29,19 @@ export const CrearEvento = () => {
       [e.target.name]: e.target.value,
     }));
   };
+  const handleImage = async (e) => {
+    const formData = new FormData();
+    formData.append("photo", e.target.files[0]);
+    const response = await GENERAL_SERVICE.upload(formData);
+    const { img } = response.data;
+    setImg(img);
+  };
 
   const submit = (e) => {
     e.persist();
     const data = {
       ...form,
+      imagen: img,
       userId: user._id,
     };
 
@@ -81,6 +90,19 @@ export const CrearEvento = () => {
                     />
                   </div>
                 </div>
+
+                <label
+                  class="block text-grey-darker text-sm font-bold mb-2"
+                  for="last_name">
+                  Imagen
+                </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                  name="photo"
+                  id="photo"
+                  type="file"
+                  onChange={handleImage}
+                />
 
                 <div class="flex items-center justify-center mt-8">
                   <button

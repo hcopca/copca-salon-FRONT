@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import EVENTO_SERVICE from "../services/eventos";
+import GENERAL_SERVICE from "../services/upload";
 import MY_SERVICE from "../services/index";
 
 import Side from "./Side";
 
 export const EditarEvento = (props) => {
   const [form, setForm] = useState({});
+  const [img, setImg] = useState(null);
   const [user, setUser] = useState(null);
   const [eventos, setEventos] = useState(null);
 
@@ -33,12 +35,20 @@ export const EditarEvento = (props) => {
       [e.target.name]: e.target.value,
     }));
   };
+  const handleImage = async (e) => {
+    const formData = new FormData();
+    formData.append("photo", e.target.files[0]);
+    const response = await GENERAL_SERVICE.upload(formData);
+    const { img } = response.data;
+    setImg(img);
+  };
 
   const submit = (e) => {
     e.persist();
     const data = {
       nombre: form.nombre,
       tipo: form.tipo,
+      imagen: form.imagen,
     };
 
     EVENTO_SERVICE.edit(data, props.match.params.id)
@@ -78,7 +88,7 @@ export const EditarEvento = (props) => {
                     <label
                       class="block text-grey-darker text-sm font-bold mb-2"
                       for="first_name">
-                      Tipo
+                      Numero
                     </label>
                     <input
                       onChange={handleInput}
@@ -90,6 +100,18 @@ export const EditarEvento = (props) => {
                     />
                   </div>
                 </div>
+                <label
+                  class="block text-grey-darker text-sm font-bold mb-2"
+                  for="last_name">
+                  Imagen
+                </label>
+                <input
+                  class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                  name="photo"
+                  id="photo"
+                  type="file"
+                  onChange={handleImage}
+                />
 
                 <div class="mb-4">
                   <div class="flex items-center justify-center mt-8">

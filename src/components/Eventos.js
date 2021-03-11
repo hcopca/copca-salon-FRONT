@@ -65,12 +65,12 @@ export const Eventos = () => {
                     <th
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Nombre
+                      Nombre del salon
                     </th>
                     <th
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Tipo
+                      Numero
                     </th>
 
                     <th scope="col" className="relative px-6 py-3">
