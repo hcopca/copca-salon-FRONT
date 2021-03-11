@@ -59,97 +59,102 @@ export default function Signup() {
               <div class="py-4 px-8 text-black text-xl border-b border-grey-lighter">
                 Registrate, es totalmente gratis.
               </div>
-              <div class="py-4 px-8">
-                <div class="flex mb-4">
-                  <div class="w-1/2 mr-1">
-                    <label
-                      class="block text-grey-darker text-sm font-bold mb-2"
-                      for="first_name">
-                      Nombre
-                    </label>
-                    <input
-                      onChange={handleInput}
-                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-                      id="first_name"
-                      name="nombre"
-                      type="text"
-                      placeholder="Nombre"
-                    />
+              <form>
+                <div class="py-4 px-8">
+                  <div class="flex mb-4">
+                    <div class="w-1/2 mr-1">
+                      <label
+                        class="block text-grey-darker text-sm font-bold mb-2"
+                        for="first_name">
+                        Nombre
+                      </label>
+                      <input
+                        onChange={handleInput}
+                        class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                        id="first_name"
+                        name="nombre"
+                        type="text"
+                        placeholder="Nombre"
+                      />
+                    </div>
+                    <div class="w-1/2 ml-1">
+                      <label
+                        class="block text-grey-darker text-sm font-bold mb-2"
+                        for="last_name">
+                        Apellido
+                      </label>
+                      <input
+                        onChange={handleInput}
+                        class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                        name="apellidoPat"
+                        id="last_name"
+                        type="text"
+                        placeholder="Apellido"
+                      />
+                    </div>
                   </div>
-                  <div class="w-1/2 ml-1">
-                    <label
-                      class="block text-grey-darker text-sm font-bold mb-2"
-                      for="last_name">
-                      Apellido
-                    </label>
-                    <input
-                      onChange={handleInput}
-                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-                      name="apellidoPat"
-                      id="last_name"
-                      type="text"
-                      placeholder="Apellido"
-                    />
-                  </div>
-                </div>
-
-                <div class="mb-4">
-                  <label
-                    class="block text-grey-darker text-sm font-bold mb-2"
-                    for="telefono">
-                    Teléfono
-                  </label>
-                  <input
-                    onChange={handleInput}
-                    class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-                    id="telefono"
-                    type="Number"
-                    placeholder="Número fijo o celular"
-                  />
 
                   <div class="mb-4">
                     <label
                       class="block text-grey-darker text-sm font-bold mb-2"
-                      for="email">
-                      Email
+                      for="telefono">
+                      Teléfono
                     </label>
                     <input
                       onChange={handleInput}
                       class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="Tu dirección email"
+                      id="telefono"
+                      type="Number"
+                      placeholder="Número fijo o celular"
                     />
-                  </div>
-                  <div class="mb-4">
-                    <label
-                      class="block text-grey-darker text-sm font-bold mb-2"
-                      for="password">
-                      Contraseña
-                    </label>
-                    <input
-                      onChange={handleInput}
-                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-                      id="password"
-                      name="password"
-                      type="password"
-                      placeholder="Tu contraseña"
-                    />
-                    <p class="text-grey text-xs mt-1">
-                      Mínimo 6 carácteres, una mayúscula y un número
-                    </p>
-                  </div>
-                  <div class="flex items-center justify-center mt-8">
-                    <button
-                      onClick={submit}
-                      class="bg-blue hover:bg-blue-dark text-black font-bold py-2 px-4 rounded-full"
-                      type="submit">
-                      Registrarse
-                    </button>
+
+                    <div class="mb-4">
+                      <label
+                        class="block text-grey-darker text-sm font-bold mb-2"
+                        for="email">
+                        Email
+                      </label>
+                      <input
+                        onChange={handleInput}
+                        class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Tu dirección email"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label
+                        class="block text-grey-darker text-sm font-bold mb-2"
+                        for="password">
+                        Contraseña
+                      </label>
+                      <input
+                        onChange={handleInput}
+                        class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="Tu contraseña"
+                        pattern="[A-Za-z0-9!?-]{6}"
+                        required
+                      />
+                      <p class="text-grey text-xs mt-1">
+                        Mínimo 6 carácteres, una mayúscula y un número
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-center mt-8">
+                      <button
+                        onClick={submit}
+                        class="bg-blue hover:bg-blue-dark text-black font-bold py-2 px-4 rounded-full"
+                        type="submit">
+                        Registrarse
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </form>
+
               <p class="text-center my-4">
                 <p
                   href="#"
