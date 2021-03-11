@@ -7,6 +7,8 @@ import Signup from "./components/Signup";
 import Blog from "./components/Blog";
 import Contacto from "./components/Contacto";
 import Galeria from "./components/Galeria";
+import SalonesCliente from "./components/SalonesCliente";
+import EventosCliente from "./components/EventosCliente";
 import { Dashboard } from "./components/Dashboard";
 import { Salones } from "./components/Salones";
 import { Extras } from "./components/Extras";
@@ -17,6 +19,7 @@ import { CrearEvento } from "./components/CrearEvento";
 import { EditarSalon } from "./components/EditarSalon";
 import { EditarEvento } from "./components/EditarEvento";
 import { EditarExtra } from "./components/EditarExtra";
+
 const createExtra = CrearExtra;
 const createEvent = CrearEvento;
 const Events = Eventos;
@@ -29,6 +32,8 @@ const Router = () => (
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/contacto" component={Contacto} />
       <Route exact path="/galeria" component={Galeria} />
+      <Route exact path="/all" component={SalonesCliente} />
+      <Route exact path="/eventos" component={EventosCliente} />
       <Route exact path="/dashboard" component={Dashboard} />
       <Route exact path="/dashboard/salones" component={Salones} />
       <Route exact path="/dashboard/salones/crear" component={CrearSalon} />

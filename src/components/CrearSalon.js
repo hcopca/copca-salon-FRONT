@@ -87,7 +87,7 @@ export const CrearSalon = () => {
                       class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
                       name="capacidadMin"
                       type="text"
-                      placeholder="Nombre"
+                      placeholder="Capacidad Mínima"
                     />
                   </div>
                   <div class="w-1/2 ml-1">
@@ -104,13 +104,27 @@ export const CrearSalon = () => {
                       placeholder="Capacidad mínima"
                     />
                   </div>
+                  <div class="w-1/2 ml-1">
+                    <label
+                      class="block text-grey-darker text-sm font-bold mb-2"
+                      for="last_name">
+                      Precio por persona
+                    </label>
+                    <input
+                      onChange={handleInput}
+                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                      name="precio"
+                      type="number"
+                      placeholder="Capacidad mínima"
+                    />
+                  </div>
                 </div>
 
                 <div class="mb-4">
                   <label
                     class="block text-grey-darker text-sm font-bold mb-2"
                     for="telefono">
-                    Detalles
+                    Detalles, telefono y correo de contacto
                   </label>
                   <textarea
                     onChange={handleInput}

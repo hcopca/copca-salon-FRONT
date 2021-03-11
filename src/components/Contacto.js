@@ -36,7 +36,7 @@ export default function Contacto() {
                   <div class="flex items-center space-x-4 lg:space-x-6">
                     <img
                       class="w-16 h-16 rounded-full lg:w-20 lg:h-20"
-                      src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      src="https://cdn.domestika.org/c_fill,dpr_auto,t_base_params.format_jpg/v1470139235/job-covers/000/042/274/42274-original.png?1470139235"
                       alt=""
                     />
                     <div class="font-medium text-lg leading-6 space-y-1">

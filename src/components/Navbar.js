@@ -80,6 +80,16 @@ export default function Navbar() {
                   Galeria
                 </Link>
                 <Link
+                  to="/all"
+                  class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Salones
+                </Link>
+                <Link
+                  to="/eventos"
+                  class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Eventos
+                </Link>
+                <Link
                   to="/signup"
                   class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                   Registrate

@@ -119,6 +119,21 @@ export const EditarSalon = (props) => {
                       defaultValue={salon.capacidadMax}
                     />
                   </div>
+                  <div class="w-1/2 ml-1">
+                    <label
+                      class="block text-grey-darker text-sm font-bold mb-2"
+                      for="last_name">
+                      Precio
+                    </label>
+                    <input
+                      onChange={handleInput}
+                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                      name="precio"
+                      type="number"
+                      placeholder="Precio"
+                      defaultValue={salon.precio}
+                    />
+                  </div>
                 </div>
 
                 <div class="mb-4">

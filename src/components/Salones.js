@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export const Salones = () => {
   const history = useHistory();
-  const [user, setUser] = useState(null);
+
   const [salones, setSalones] = useState(null);
 
   const agregar = (e) => {
@@ -76,6 +76,16 @@ export const Salones = () => {
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                       Capacidad Maxima
                     </th>
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Precio
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Detalles
+                    </th>
                     <th scope="col" className="relative px-6 py-3">
                       <span className="sr-only">Edit</span>
                     </th>
@@ -96,6 +106,12 @@ export const Salones = () => {
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {e.capacidadMax}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {e.precio}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {e.detalles}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <Link to={`/dashboard/salones/edit/${e._id}`}>
