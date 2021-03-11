@@ -45,7 +45,7 @@ export const Salones = () => {
         <button
           onClick={agregar}
           style={{
-            backgroundColor: "rgb(80,70,220)",
+            backgroundColor: "rgb(67,148,108)",
             color: "white",
             borderRadius: "4px",
             width: "150px",

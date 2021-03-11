@@ -32,7 +32,7 @@ export const Extras = () => {
     EXTRA_SERVICE.delete(id)
       .then(({ data }) => {
         console.log(data);
-        setExtras(extras.filter((extras) => extras._id !== data.extras._id));
+        setExtras(extras.filter((extras) => extras._id !== data.extra._id));
       })
       .catch((err) => console.log(err));
   };
@@ -44,7 +44,7 @@ export const Extras = () => {
         <button
           onClick={agregar}
           style={{
-            backgroundColor: "rgb(80,70,220)",
+            backgroundColor: "rgb(67,148,108)",
             color: "white",
             borderRadius: "4px",
             width: "150px",

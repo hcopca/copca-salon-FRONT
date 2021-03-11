@@ -39,7 +39,6 @@ export const EditarExtra = (props) => {
     const data = {
       nombre: form.nombre,
       cantidad: form.cantidad,
-      userId: user._id,
     };
 
     EXTRA_SERVICE.edit(data, props.match.params.id)
@@ -84,7 +83,7 @@ export const EditarExtra = (props) => {
                     <input
                       onChange={handleInput}
                       class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
-                      name="tipo"
+                      name="cantidad"
                       type="text"
                       placeholder="Cantidad"
                       defaultValue={extra.cantidad}

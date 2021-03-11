@@ -46,7 +46,7 @@ export const Eventos = () => {
         <button
           onClick={agregar}
           style={{
-            backgroundColor: "rgb(80,70,220)",
+            backgroundColor: "rgb(67,148,108)",
             color: "white",
             borderRadius: "4px",
             width: "150px",
@@ -70,7 +70,7 @@ export const Eventos = () => {
                     <th
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Cantidad
+                      Tipo
                     </th>
 
                     <th scope="col" className="relative px-6 py-3">
@@ -89,7 +89,7 @@ export const Eventos = () => {
                           {e.nombre}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {e.cantidad}
+                          {e.tipo}
                         </td>
 
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
