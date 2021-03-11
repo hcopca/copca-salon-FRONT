@@ -209,7 +209,7 @@ export default function Footer() {
               </a>
             </div>
             <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-              &copy; 2021 Aspen, Inc. All rights reserved.
+              &copy; 2021 Lucky, Inc. All rights reserved.
             </p>
           </div>
         </div>

@@ -1,10 +1,11 @@
-import { cloneElement, React, useState } from "react";
+import { React, useState } from "react";
+import { useHistory } from "react-router";
 import MY_SERVICE from "../services/index";
 import Navbar from "./Navbar";
 
 export default function Signup() {
   const [form, setForm] = useState({});
-
+  const history = useHistory();
   const handleInput = (e) => {
     e.persist();
     setForm((prevState) => ({
@@ -15,7 +16,11 @@ export default function Signup() {
 
   const submit = (e) => {
     e.persist();
-    MY_SERVICE.signup(form).then(({ data }) => {});
+    MY_SERVICE.signup(form)
+      .then(({ data }) => {
+        history.push("/login");
+      })
+      .catch((err) => console.log(err.response));
   };
 
   return (
@@ -135,7 +140,7 @@ export default function Signup() {
                       Mínimo 6 carácteres, una mayúscula y un número
                     </p>
                   </div>
-                  <div class="flex items-center justify-between mt-8">
+                  <div class="flex items-center justify-center mt-8">
                     <button
                       onClick={submit}
                       class="bg-blue hover:bg-blue-dark text-black font-bold py-2 px-4 rounded-full"
@@ -157,8 +162,7 @@ export default function Signup() {
           <footer class="w-full bg-grey-lighter py-8">
             <div class="container mx-auto text-center px-8">
               <p class="text-grey-dark mb-2 text-sm">
-                Este es un producto de{" "}
-                <span class="font-bold">Salones Aspen</span>
+                Este es un producto de <span class="font-bold">Lucky inc.</span>
               </p>
             </div>
           </footer>

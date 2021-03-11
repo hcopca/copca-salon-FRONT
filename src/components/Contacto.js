@@ -9,7 +9,7 @@ export default function Contacto() {
           <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
             <div class="space-y-5 sm:space-y-4">
               <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                Meet our leadership
+                Conoce a nuestro equipo de trabajo.
               </h2>
               <p class="text-xl text-gray-500">
                 Libero fames augue nisl porttitor nisi, quis. Id ac elit odio

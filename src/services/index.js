@@ -17,6 +17,10 @@ const MY_SERVICE = {
   login: async (user) => {
     return await service.post("/login", user);
   },
+  currentUser: async () => {
+    return await service.get("/logged");
+  },
+
   logOut: async () => {
     return await service.get("/logout");
   },

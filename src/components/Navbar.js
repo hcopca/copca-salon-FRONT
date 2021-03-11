@@ -49,12 +49,12 @@ export default function Navbar() {
               <div class="flex-shrink-0 flex items-center">
                 <img
                   class="block lg:hidden h-8 w-auto"
-                  src="/aspen-logo.png"
+                  src="../../../trebol.png"
                   alt="Workflow"
                 />
                 <img
                   class="hidden lg:block h-8 w-auto"
-                  src="/aspen-logo.png"
+                  src="../../../trebol.png"
                   alt="Workflow"
                 />
               </div>
@@ -163,17 +163,6 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
-            </div>
-            <div class="mt-3 space-y-1">
-              <a class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6">
-                Your Profile
-              </a>
-              <a class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6">
-                Settings
-              </a>
-              <a class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6">
-                Sign out
-              </a>
             </div>
           </div>
         </div>
