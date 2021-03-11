@@ -84,7 +84,7 @@ export default function Side({ children }) {
                         d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                       />
                     </svg>
-                    Dashboard
+                    Perfil
                   </Link>
 
                   <Link
@@ -200,9 +200,9 @@ export default function Side({ children }) {
               <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
                 <div className="flex items-center flex-shrink-0 px-4">
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
-                    alt="Workflow"
+                    className="h-16 w-auto"
+                    src="https://logos.textgiraffe.com/logos/logo-name/lucky-designstyle-boots-m.png"
+                    alt="Lucky"
                   />
                 </div>
                 <nav className="mt-5 flex-1 px-2 bg-white space-y-1">
@@ -223,7 +223,7 @@ export default function Side({ children }) {
                         d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                       />
                     </svg>
-                    Dashboard
+                    Perfil
                   </Link>
 
                   <Link
@@ -311,19 +311,12 @@ export default function Side({ children }) {
                   to="/dashboard"
                   className="flex-shrink-0 w-full group block">
                   <div className="flex items-center">
-                    <div>
-                      <img
-                        className="inline-block h-9 w-9 rounded-full"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
-                      />
-                    </div>
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
                         {user.nombre}
                       </p>
                       <p className="text-xs font-medium text-gray-500 group-hover:text-gray-700">
-                        View profile
+                        Ver perfil
                       </p>
                     </div>
                   </div>

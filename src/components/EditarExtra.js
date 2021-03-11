@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
-import EVENTO_SERVICE from "../services/eventos";
+import EXTRA_SERVICE from "../services/extras";
 import MY_SERVICE from "../services/index";
 
 import Side from "./Side";
 
-export const CrearEvento = () => {
+export const EditarExtra = (props) => {
   const [form, setForm] = useState({});
-
   const [user, setUser] = useState(null);
+  const [extra, setExtra] = useState(null);
 
   useEffect(() => {
     MY_SERVICE.currentUser()
@@ -18,7 +18,12 @@ export const CrearEvento = () => {
         }
       })
       .catch((err) => console.log(err));
-  }, []);
+    EXTRA_SERVICE.detail(props.match.params.id)
+      .then(({ data: { extra } }) => {
+        setExtra(extra);
+      })
+      .catch((err) => console.log(err));
+  }, [props.match.params.id]);
 
   const history = useHistory();
   const handleInput = (e) => {
@@ -32,19 +37,22 @@ export const CrearEvento = () => {
   const submit = (e) => {
     e.persist();
     const data = {
-      ...form,
+      nombre: form.nombre,
+      cantidad: form.cantidad,
       userId: user._id,
     };
 
-    EVENTO_SERVICE.create(data)
+    EXTRA_SERVICE.edit(data, props.match.params.id)
       .then(({ data }) => {
-        history.push("/dashboard/eventos");
+        history.push("/dashboard/extras");
       })
       .catch((err) => console.log(err.response));
   };
+  console.log(form);
+  if (!extra) return <p>Loading</p>;
   return (
     <Side>
-      <h2>Agregar un extra</h2>
+      <h2>Editar Extra</h2>
       <div>
         <div class="w-full bg-grey-lightest">
           <div class="container mx-auto py-8">
@@ -61,7 +69,8 @@ export const CrearEvento = () => {
                     class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
                     name="nombre"
                     type="text"
-                    placeholder="Nombre del evento"
+                    placeholder="Nombre"
+                    defaultValue={extra.nombre}
                   />
                 </div>
 
@@ -70,25 +79,28 @@ export const CrearEvento = () => {
                     <label
                       class="block text-grey-darker text-sm font-bold mb-2"
                       for="first_name">
-                      Tipo de evento
+                      Tipo
                     </label>
                     <input
                       onChange={handleInput}
                       class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
                       name="tipo"
-                      type="String"
-                      placeholder="Tipo de evento"
+                      type="text"
+                      placeholder="Cantidad"
+                      defaultValue={extra.cantidad}
                     />
                   </div>
                 </div>
 
-                <div class="flex items-center justify-center mt-8">
-                  <button
-                    onClick={submit}
-                    class="bg-blue hover:bg-blue-dark text-black font-bold py-2 px-4 rounded-full"
-                    type="submit">
-                    Guardar
-                  </button>
+                <div class="mb-4">
+                  <div class="flex items-center justify-center mt-8">
+                    <button
+                      onClick={submit}
+                      class="bg-blue hover:bg-blue-dark text-black font-bold py-2 px-4 rounded-full"
+                      type="submit">
+                      Guardar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

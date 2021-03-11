@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import Side from "./Side";
 import EXTRA_SERVICE from "../services/extras";
 import MY_SERVICE from "../services/index";
+import { Link } from "react-router-dom";
 
 export const Extras = () => {
   const history = useHistory();
@@ -90,11 +91,9 @@ export const Extras = () => {
                         </td>
 
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <a
-                            href="#"
-                            className="text-indigo-600 hover:text-indigo-900">
-                            Edit
-                          </a>
+                          <Link to={`/dashboard/extras/edit/${e._id}`}>
+                            Editar
+                          </Link>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <button onClick={() => handleDelete(e._id)}>

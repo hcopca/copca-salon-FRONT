@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import Side from "./Side";
 import SALON_SERVICE from "../services/salones";
 import MY_SERVICE from "../services/index";
+import { Link } from "react-router-dom";
 
 export const Salones = () => {
   const history = useHistory();
@@ -97,11 +98,9 @@ export const Salones = () => {
                           {e.capacidadMax}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <a
-                            href="#"
-                            className="text-indigo-600 hover:text-indigo-900">
-                            Edit
-                          </a>
+                          <Link to={`/dashboard/salones/edit/${e._id}`}>
+                            Editar
+                          </Link>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <button onClick={() => handleDelete(e._id)}>

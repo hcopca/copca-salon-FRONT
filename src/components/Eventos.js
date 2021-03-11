@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import Side from "./Side";
 import EVENTO_SERVICE from "../services/eventos";
 import MY_SERVICE from "../services/index";
+import { Link } from "react-router-dom";
 
 export const Eventos = () => {
   const history = useHistory();
@@ -17,7 +18,7 @@ export const Eventos = () => {
   useEffect(() => {
     MY_SERVICE.currentUser()
       .then(({ data }) => {
-        EVENTO_SERVICE.extras_user(data.user._id)
+        EVENTO_SERVICE.eventos_user(data.user._id)
           .then(({ data }) => {
             console.log(data);
             setEventos(data.eventos);
@@ -92,11 +93,9 @@ export const Eventos = () => {
                         </td>
 
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <a
-                            href="#"
-                            className="text-indigo-600 hover:text-indigo-900">
-                            Edit
-                          </a>
+                          <Link to={`/dashboard/eventos/edit/${e._id}`}>
+                            Editar
+                          </Link>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <button onClick={() => handleDelete(e._id)}>

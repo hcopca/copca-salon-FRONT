@@ -11,6 +11,9 @@ const EXTRA_SERVICE = {
   show: async () => {
     return await service.get("/all");
   },
+  detail: async (id) => {
+    return await service.get(`/detail/${id}`);
+  },
   extras_user: async (id) => {
     return await service.get(`/user/${id}`);
   },

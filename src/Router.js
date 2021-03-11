@@ -14,7 +14,11 @@ import { Eventos } from "./components/Eventos";
 import { CrearSalon } from "./components/CrearSalon";
 import { CrearExtra } from "./components/CrearExtra";
 import { CrearEvento } from "./components/CrearEvento";
+import { EditarSalon } from "./components/EditarSalon";
+import { EditarEvento } from "./components/EditarEvento";
+import { EditarExtra } from "./components/EditarExtra";
 const createExtra = CrearExtra;
+const createEvent = CrearEvento;
 const Events = Eventos;
 const Router = () => (
   <BrowserRouter>
@@ -28,11 +32,20 @@ const Router = () => (
       <Route exact path="/dashboard" component={Dashboard} />
       <Route exact path="/dashboard/salones" component={Salones} />
       <Route exact path="/dashboard/salones/crear" component={CrearSalon} />
+      <Route exact path="/dashboard/salones/edit/:id" component={EditarSalon} />
 
       <Route exact path="/dashboard/extras" component={Extras} />
       <Route exact path="/dashboard/extras/crear" component={createExtra} />
+      <Route exact path="/dashboard/extras/edit/:id" component={EditarExtra} />
+
       <Route exact path="/dashboard/eventos" component={Events} />
-      <Route exact path="/dashboard/extras/crear" component={CrearEvento} />
+      <Route exact path="/dashboard/eventos/crear" component={createEvent} />
+      <Route
+        exact
+        path="/dashboard/eventos/edit/:id"
+        component={EditarEvento}
+      />
+
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>

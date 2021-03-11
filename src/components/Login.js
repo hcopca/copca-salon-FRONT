@@ -42,7 +42,7 @@ export default function Login() {
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img
             className="mx-auto h-12 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+            src="https://img2.freepng.es/20190125/vvo/kisspng-clip-art-four-leaf-clover-shamrock-image-symbol-5c4a98b4e27e64.3128494015483926289277.jpg"
             alt="Workflow"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -96,7 +96,7 @@ export default function Login() {
                   id="remember_me"
                   name="remember_me"
                   type="checkbox"
-                  className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
+                  className="h-4 w-4 text-green-300 focus:ring-indigo-500 border-gray-300 rounded"
                 />
                 <label
                   for="remember_me"
@@ -108,7 +108,7 @@ export default function Login() {
               <div className="text-sm">
                 <p
                   href="#"
-                  className="font-medium text-indigo-600 hover:text-indigo-500">
+                  className="font-medium text-green-600 hover:text-black">
                   Forgot your password?
                 </p>
               </div>
@@ -118,7 +118,7 @@ export default function Login() {
               <button
                 onClick={submit}
                 type="submit"
-                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-700 hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Sign in
               </button>
             </div>

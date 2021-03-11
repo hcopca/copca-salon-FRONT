@@ -11,6 +11,9 @@ const EVENTO_SERVICE = {
   show: async () => {
     return await service.get("/all");
   },
+  detail: async (id) => {
+    return await service.get(`/detail/${id}`);
+  },
   eventos_user: async (id) => {
     return await service.get(`/user/${id}`);
   },

@@ -14,31 +14,22 @@ export default function Galeria() {
               Galeria
             </h2>
             <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-              A continuación las fotos de pocos de los muchos eventos que hemos
-              tenido el honor de realizar.
+              A continuación las fotos de pocos de los muchos salones que están
+              registrados.
             </p>
           </div>
           <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div class="flex-shrink-0">
-                <img
-                  class="h-48 w-full object-cover"
-                  src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                  alt=""
-                />
+                <img class="h-48 w-full object-cover" src="/royal.jpg" alt="" />
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
-                  <p class="text-sm font-medium text-indigo-600">
-                    <a href="#" class="hover:underline">
-                      Article
-                    </a>
+                  <p class="text-sm font-medium text-green-600">Salón Gallia</p>
+
+                  <p class="text-xl font-semibold text-gray-900">
+                    Ubicado en Pachuca, Hgo.
                   </p>
-                  <a href="#" class="block mt-2">
-                    <p class="text-xl font-semibold text-gray-900">
-                      Boost your conversion rate
-                    </p>
-                  </a>
                 </div>
                 <div class="mt-6 flex items-center">
                   <div class="flex-shrink-0"></div>
@@ -53,50 +44,34 @@ export default function Galeria() {
               <div class="flex-shrink-0">
                 <img
                   class="h-48 w-full object-cover"
-                  src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                  src="/evento-uno.jpg"
                   alt=""
                 />
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
-                  <p class="text-sm font-medium text-indigo-600">
-                    <a href="#" class="hover:underline">
-                      Video
-                    </a>
+                  <p class="text-sm font-medium text-indigo-600">Salón Prime</p>
+
+                  <p class="text-xl font-semibold text-gray-900">
+                    Ubicado en Pachuca Hgo.
                   </p>
-                  <a href="#" class="block mt-2">
-                    <p class="text-xl font-semibold text-gray-900">
-                      How to use search engine optimization to drive sales
-                    </p>
-                    <p class="mt-3 text-base text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Velit facilis asperiores porro quaerat doloribus, eveniet
-                      dolore. Adipisci tempora aut inventore optio animi.,
-                      tempore temporibus quo laudantium.
-                    </p>
-                  </a>
+                  <p class="mt-3 text-base text-gray-500"></p>
                 </div>
                 <div class="mt-6 flex items-center">
                   <div class="flex-shrink-0">
-                    <a href="#">
-                      <span class="sr-only">Brenna Goyette</span>
-                      <img
-                        class="h-10 w-10 rounded-full"
-                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
-                      />
-                    </a>
+                    <span class="sr-only">Brenna Goyette</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
                   </div>
                   <div class="ml-3">
-                    <p class="text-sm font-medium text-gray-900">
-                      <a href="#" class="hover:underline">
-                        Brenna Goyette
-                      </a>
-                    </p>
+                    <p class="text-sm font-medium text-gray-900">Invitada</p>
                     <div class="flex space-x-1 text-sm text-gray-500">
                       <time datetime="2020-03-10">Mar 10, 2020</time>
                       <span aria-hidden="true">&middot;</span>
-                      <span>4 min read</span>
+                      <span>Salón muy amplio con un diseño increíble</span>
                     </div>
                   </div>
                 </div>
@@ -107,50 +82,38 @@ export default function Galeria() {
               <div class="flex-shrink-0">
                 <img
                   class="h-48 w-full object-cover"
-                  src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                  src="/terraza-dentro.jpg"
                   alt=""
                 />
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
                   <p class="text-sm font-medium text-indigo-600">
-                    <a href="#" class="hover:underline">
-                      Case Study
-                    </a>
+                    Terraza Aspen
                   </p>
-                  <a href="#" class="block mt-2">
-                    <p class="text-xl font-semibold text-gray-900">
-                      Improve your customer experience
-                    </p>
-                    <p class="mt-3 text-base text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint harum rerum voluptatem quo recusandae magni placeat
-                      saepe molestiae, sed excepturi cumque corporis perferendis
-                      hic.
-                    </p>
-                  </a>
+
+                  <p class="text-xl font-semibold text-gray-900">
+                    Pertenece a Gallia
+                  </p>
+                  <p class="mt-3 text-base text-gray-500"></p>
                 </div>
                 <div class="mt-6 flex items-center">
                   <div class="flex-shrink-0">
-                    <a href="#">
-                      <span class="sr-only">Daniela Metz</span>
-                      <img
-                        class="h-10 w-10 rounded-full"
-                        src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
-                      />
-                    </a>
+                    <span class="sr-only">Invitada</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
                   </div>
                   <div class="ml-3">
                     <p class="text-sm font-medium text-gray-900">
-                      <a href="#" class="hover:underline">
-                        Daniela Metz
-                      </a>
+                      Daniela Metz
                     </p>
                     <div class="flex space-x-1 text-sm text-gray-500">
                       <time datetime="2020-02-12">Feb 12, 2020</time>
                       <span aria-hidden="true">&middot;</span>
-                      <span>11 min read</span>
+                      <span>Excelente ambiente al aire libre</span>
                     </div>
                   </div>
                 </div>
