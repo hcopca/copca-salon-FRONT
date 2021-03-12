@@ -48,7 +48,7 @@ export const EditarEvento = (props) => {
     const data = {
       nombre: form.nombre,
       tipo: form.tipo,
-      imagen: form.imagen,
+      imagen: img,
     };
 
     EVENTO_SERVICE.edit(data, props.match.params.id)

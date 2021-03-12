@@ -3,25 +3,24 @@ import React from "react";
 export default function HomeMitad() {
   return (
     <div>
-      <div class="relative bg-white py-16 sm:py-24 lg:py-32">
-        <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-          <h2 class="text-base font-semibold tracking-wider text-green-600 uppercase"></h2>
-          <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+      <div className="relative bg-white py-16 sm:py-24 lg:py-32">
+        <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+          <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
             – Tu evento como mejor lo prefieras –
           </p>
-          <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+          <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
             ¿Te gustaría agregar o quitar servicios? Agenda una cita y
             platicanos como te gustaria que fuera ese gran día.
           </p>
-          <div class="mt-12">
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
+          <div className="mt-12">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
                     <div>
-                      <span class="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
+                      <span className="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
                         <svg
-                          class="h-6 w-6 text-black"
+                          className="h-6 w-6 text-black"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -35,23 +34,23 @@ export default function HomeMitad() {
                         </svg>
                       </span>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       7 hrs de servicio del salón
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       Horas extra se cobra por separado
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
                     <div>
-                      <span class="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
+                      <span className="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
                         <svg
-                          class="h-6 w-6 text-black"
+                          className="h-6 w-6 text-black"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -65,23 +64,23 @@ export default function HomeMitad() {
                         </svg>
                       </span>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       Servicio de meseros.
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       2 meseros por cada 3 mesas
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
                     <div>
-                      <span class="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
+                      <span className="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
                         <svg
-                          class="h-6 w-6 text-black"
+                          className="h-6 w-6 text-black"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -95,23 +94,23 @@ export default function HomeMitad() {
                         </svg>
                       </span>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       Centros de mesa.
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       Florales o con globos
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
                     <div>
-                      <span class="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
+                      <span className="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
                         <svg
-                          class="h-6 w-6 text-black"
+                          className="h-6 w-6 text-black"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -125,23 +124,23 @@ export default function HomeMitad() {
                         </svg>
                       </span>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       Montaje de mesas y sillas.
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       Cuadradas o redondas, mantelería y salas longue
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
                     <div>
-                      <span class="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
+                      <span className="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
                         <svg
-                          class="h-6 w-6 text-black"
+                          className="h-6 w-6 text-black"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -155,23 +154,23 @@ export default function HomeMitad() {
                         </svg>
                       </span>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       Comida o cena formal
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       4 tiempos incluyendo postre
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
                     <div>
-                      <span class="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
+                      <span className="inline-flex items-center justify-center p-3 bg-green-300 rounded-md shadow-lg">
                         <svg
-                          class="h-6 w-6 text-black"
+                          className="h-6 w-6 text-black"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -185,10 +184,10 @@ export default function HomeMitad() {
                         </svg>
                       </span>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       Una hora de amenización.
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       Durante los alimentos. Sax, violín o piano.
                     </p>
                   </div>

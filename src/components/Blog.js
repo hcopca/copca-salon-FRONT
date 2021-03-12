@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 export default function Blog() {
   return (
     <>
@@ -72,7 +73,7 @@ export default function Blog() {
                   <img
                     class="h-10 w-10 rounded-full"
                     src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
+                    alt="a"
                   />
                 </div>
                 <div class="ml-3">
@@ -106,7 +107,7 @@ export default function Blog() {
                   <img
                     class="h-10 w-10 rounded-full"
                     src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
+                    alt="a"
                   />
                 </div>
                 <div class="ml-3">
@@ -130,13 +131,13 @@ export default function Blog() {
           <div class="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
             <div>
               <div>
-                <a href="#" class="inline-block">
+                <Link to="#" class="inline-block">
                   <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
                     Article
                   </span>
-                </a>
+                </Link>
               </div>
-              <a href="#" class="block mt-4">
+              <Link to="#" class="block mt-4">
                 <p class="text-xl font-semibold text-gray-900">
                   Boost your conversion rate
                 </p>
@@ -144,21 +145,21 @@ export default function Blog() {
                   Nullam risus blandit ac aliquam justo ipsum. Quam mauris
                   volutpat massa dictumst amet. Sapien tortor lacus arcu.
                 </p>
-              </a>
+              </Link>
               <div class="mt-6 flex items-center">
                 <div class="flex-shrink-0">
-                  <a href="#">
+                  <Link to="#">
                     <span class="sr-only">Paul York</span>
                     <img
                       class="h-10 w-10 rounded-full"
                       src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div class="ml-3">
                   <p class="text-sm font-medium text-gray-900">
-                    <a href="#">Paul York</a>
+                    <Link to="#">Paul York</Link>
                   </p>
                   <div class="flex space-x-1 text-sm text-gray-500">
                     <time datetime="2020-03-16">Mar 16, 2020</time>
@@ -171,13 +172,13 @@ export default function Blog() {
 
             <div>
               <div>
-                <a href="#" class="inline-block">
+                <Link to="#" class="inline-block">
                   <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
                     Video
                   </span>
-                </a>
+                </Link>
               </div>
-              <a href="#" class="block mt-4">
+              <Link to="#" class="block mt-4">
                 <p class="text-xl font-semibold text-gray-900">
                   How to use search engine optimization to drive sales
                 </p>
@@ -185,21 +186,21 @@ export default function Blog() {
                   Nullam risus blandit ac aliquam justo ipsum. Quam mauris
                   volutpat massa dictumst amet. Sapien tortor lacus arcu.
                 </p>
-              </a>
+              </Link>
               <div class="mt-6 flex items-center">
                 <div class="flex-shrink-0">
-                  <a href="#">
+                  <Link to="#">
                     <span class="sr-only">Dessie Ryan</span>
                     <img
                       class="h-10 w-10 rounded-full"
                       src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div class="ml-3">
                   <p class="text-sm font-medium text-gray-900">
-                    <a href="#">Dessie Ryan</a>
+                    <Link to="#">Dessie Ryan</Link>
                   </p>
                   <div class="flex space-x-1 text-sm text-gray-500">
                     <time datetime="2020-03-10">Mar 10, 2020</time>
@@ -212,13 +213,13 @@ export default function Blog() {
 
             <div>
               <div>
-                <a href="#" class="inline-block">
+                <Link to="#" class="inline-block">
                   <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
                     Case Study
                   </span>
-                </a>
+                </Link>
               </div>
-              <a href="#" class="block mt-4">
+              <Link to="#" class="block mt-4">
                 <p class="text-xl font-semibold text-gray-900">
                   Improve your customer experience
                 </p>
@@ -226,21 +227,21 @@ export default function Blog() {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
                   iure iusto fugiat commodi sequi.
                 </p>
-              </a>
+              </Link>
               <div class="mt-6 flex items-center">
                 <div class="flex-shrink-0">
-                  <a href="#">
+                  <Link to="#">
                     <span class="sr-only">Easer Collins</span>
                     <img
                       class="h-10 w-10 rounded-full"
                       src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div class="ml-3">
                   <p class="text-sm font-medium text-gray-900">
-                    <a href="#">Easer Collins</a>
+                    <Link to="#">Easer Collins</Link>
                   </p>
                   <div class="flex space-x-1 text-sm text-gray-500">
                     <time datetime="2020-02-12">Feb 12, 2020</time>

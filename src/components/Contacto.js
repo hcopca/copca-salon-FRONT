@@ -55,7 +55,7 @@ export default function Contacto() {
                     />
                     <div class="font-medium text-lg leading-6 space-y-1">
                       <h3>Eduardo Zamarrón</h3>
-                      <p class="text-green-800">Teacher Assistent</p>
+                      <p class="text-green-800">Teacher Assistant</p>
                     </div>
                   </div>
                 </li>
@@ -69,7 +69,7 @@ export default function Contacto() {
                     />
                     <div class="font-medium text-lg leading-6 space-y-1">
                       <h3>Jorge Martínez</h3>
-                      <p class="text-green-800">Teacher Assistent</p>
+                      <p class="text-green-800">Teacher Assistant</p>
                     </div>
                   </div>
                 </li>
@@ -133,21 +133,6 @@ export default function Contacto() {
                     <div class="mt-1">
                       <dt class="sr-only">Phone number</dt>
                       <dd></dd>
-                    </div>
-                  </dl>
-                </div>
-                <div>
-                  <h3 class="text-lg leading-6 font-medium text-gray-900">
-                    Say hello
-                  </h3>
-                  <dl class="mt-2 text-base text-gray-500">
-                    <div>
-                      <dt class="sr-only">Email</dt>
-                      <dd>support@example.com</dd>
-                    </div>
-                    <div class="mt-1">
-                      <dt class="sr-only">Phone number</dt>
-                      <dd>+1 (555) 123-4567</dd>
                     </div>
                   </dl>
                 </div>

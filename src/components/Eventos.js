@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export const Eventos = () => {
   const history = useHistory();
-  const [user, setUser] = useState(null);
+
   const [eventos, setEventos] = useState(null);
 
   const agregar = (e) => {

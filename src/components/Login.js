@@ -23,7 +23,7 @@ export default function Login() {
         }
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [history]);
 
   //Para loguear
 
