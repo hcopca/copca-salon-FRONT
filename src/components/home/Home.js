@@ -90,7 +90,7 @@ function Home() {
                 <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   ¿Buscas otro tipo de evento? Nuestros salones cuentan con todo
                   lo necesario para alojar cualquier tipo de evento ¡De 60 hasta
-                  900 invitados
+                  900 invitados!
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">

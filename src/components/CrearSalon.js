@@ -115,7 +115,7 @@ export const CrearSalon = () => {
                       class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
                       name="precio"
                       type="number"
-                      placeholder="Capacidad mínima"
+                      placeholder="Precio"
                     />
                   </div>
                 </div>

@@ -104,14 +104,6 @@ export default function Login() {
                   Remember me
                 </label>
               </div>
-
-              <div className="text-sm">
-                <p
-                  href="#"
-                  className="font-medium text-green-600 hover:text-black">
-                  Forgot your password?
-                </p>
-              </div>
             </div>
 
             <div>
@@ -119,7 +111,7 @@ export default function Login() {
                 onClick={submit}
                 type="submit"
                 className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-700 hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Sign in
+                Entrar
               </button>
             </div>
 
@@ -130,7 +122,7 @@ export default function Login() {
                 </div>
                 <div className="relative flex justify-center text-sm">
                   <span className="px-2 bg-white text-gray-500">
-                    Or continue with
+                    Proximamente puedes entrar con...
                   </span>
                 </div>
               </div>

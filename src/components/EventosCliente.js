@@ -14,7 +14,9 @@ export default function EventosCliente() {
   return (
     <div>
       <Navbar />
-      <h1>TIPOS DE EVENTOS</h1>
+      <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        Tipos de evento
+      </h2>
       <div class="container my-12 mx-auto px-4 md:px-12">
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
           {eventos?.map((e, i) => {
@@ -27,14 +29,19 @@ export default function EventosCliente() {
                     src={e.imagen}
                   />
 
-                  <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-lg">
-                      <h5>Nombre del salón: </h5>
+                  <header class="flex items-center justify-between leading-tight p-2 md:p-4 ">
+                    <h1 class="text-lg text-blue-900 font-bold">
+                      <h5 class="flex items-center justify-between leading-tight p-2 md:p-4 ">
+                        Salón:{" "}
+                      </h5>
                       {e.nombre}
                     </h1>
-                    <p class="text-grey-darker text-sm">
-                      Número de contacto: {e.tipo}
-                    </p>
+                    <h1 class="text-lg text-red-900 font-bold">
+                      <h5 class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        Contacto:{" "}
+                      </h5>
+                      {e.tipo}
+                    </h1>
                   </header>
                 </article>
               </div>

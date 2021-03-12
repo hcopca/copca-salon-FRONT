@@ -131,40 +131,33 @@ export default function Blog() {
           <div class="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
             <div>
               <div>
-                <Link to="#" class="inline-block">
-                  <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-                    Article
-                  </span>
-                </Link>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
+                  Comentario
+                </span>
               </div>
-              <Link to="#" class="block mt-4">
-                <p class="text-xl font-semibold text-gray-900">
-                  Boost your conversion rate
-                </p>
-                <p class="mt-3 text-base text-gray-500">
-                  Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                  volutpat massa dictumst amet. Sapien tortor lacus arcu.
-                </p>
-              </Link>
+
+              <p class="text-xl font-semibold text-gray-900">Día del padre.</p>
+              <p class="mt-3 text-base text-gray-500">
+                "Un lugar bastante cómodo para disfrutar de momentos especiales,
+                lo recomiendo ampliamente, excelente atención y servicio
+                yeah!!!".
+              </p>
+
               <div class="mt-6 flex items-center">
                 <div class="flex-shrink-0">
-                  <Link to="#">
-                    <span class="sr-only">Paul York</span>
-                    <img
-                      class="h-10 w-10 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
-                  </Link>
+                  <span class="sr-only">Beto Espinoza</span>
+                  <img
+                    class="h-10 w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
                 </div>
                 <div class="ml-3">
-                  <p class="text-sm font-medium text-gray-900">
-                    <Link to="#">Paul York</Link>
-                  </p>
+                  <p class="text-sm font-medium text-gray-900">Paul York</p>
                   <div class="flex space-x-1 text-sm text-gray-500">
                     <time datetime="2020-03-16">Mar 16, 2020</time>
                     <span aria-hidden="true">&middot;</span>
-                    <span>6 min read</span>
+                    <span>Salón Ultra</span>
                   </div>
                 </div>
               </div>
@@ -172,40 +165,34 @@ export default function Blog() {
 
             <div>
               <div>
-                <Link to="#" class="inline-block">
-                  <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
-                    Video
-                  </span>
-                </Link>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
+                  Comentario
+                </span>
               </div>
-              <Link to="#" class="block mt-4">
-                <p class="text-xl font-semibold text-gray-900">
-                  How to use search engine optimization to drive sales
-                </p>
-                <p class="mt-3 text-base text-gray-500">
-                  Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                  volutpat massa dictumst amet. Sapien tortor lacus arcu.
-                </p>
-              </Link>
+
+              <p class="text-xl font-semibold text-gray-900">Bautizo</p>
+              <p class="mt-3 text-base text-gray-500">
+                "La atención fue excelente fueron muy pacientes con respecto a
+                resolver todas nuestras inquietudes y nos apoyaron para lo que
+                se nos ofreciera el capitán de meseros excelente siempre
+                pendiente".
+              </p>
+
               <div class="mt-6 flex items-center">
                 <div class="flex-shrink-0">
-                  <Link to="#">
-                    <span class="sr-only">Dessie Ryan</span>
-                    <img
-                      class="h-10 w-10 rounded-full"
-                      src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
-                  </Link>
+                  <span class="sr-only">Dessie Ryan</span>
+                  <img
+                    class="h-10 w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
                 </div>
                 <div class="ml-3">
-                  <p class="text-sm font-medium text-gray-900">
-                    <Link to="#">Dessie Ryan</Link>
-                  </p>
+                  <p class="text-sm font-medium text-gray-900">Dessie Ryan</p>
                   <div class="flex space-x-1 text-sm text-gray-500">
                     <time datetime="2020-03-10">Mar 10, 2020</time>
                     <span aria-hidden="true">&middot;</span>
-                    <span>4 min read</span>
+                    <span>Salón Veradiz</span>
                   </div>
                 </div>
               </div>
@@ -213,31 +200,28 @@ export default function Blog() {
 
             <div>
               <div>
-                <Link to="#" class="inline-block">
-                  <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
-                    Case Study
-                  </span>
-                </Link>
+                <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                  Comentario
+                </span>
               </div>
-              <Link to="#" class="block mt-4">
-                <p class="text-xl font-semibold text-gray-900">
-                  Improve your customer experience
-                </p>
-                <p class="mt-3 text-base text-gray-500">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
-                  iure iusto fugiat commodi sequi.
-                </p>
-              </Link>
+
+              <p class="text-xl font-semibold text-gray-900">
+                Despedida de soltera.
+              </p>
+              <p class="mt-3 text-base text-gray-500">
+                "Me encantó el salón y la comida!! También debo agregar que el
+                personal fue muy amable y servicial. :) Lo recomiendo
+                ampliamente".
+              </p>
+
               <div class="mt-6 flex items-center">
                 <div class="flex-shrink-0">
-                  <Link to="#">
-                    <span class="sr-only">Easer Collins</span>
-                    <img
-                      class="h-10 w-10 rounded-full"
-                      src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
-                  </Link>
+                  <span class="sr-only">Easer Collins</span>
+                  <img
+                    class="h-10 w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=J4TTyWeNKF&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=82"
+                    alt=""
+                  />
                 </div>
                 <div class="ml-3">
                   <p class="text-sm font-medium text-gray-900">
@@ -246,7 +230,7 @@ export default function Blog() {
                   <div class="flex space-x-1 text-sm text-gray-500">
                     <time datetime="2020-02-12">Feb 12, 2020</time>
                     <span aria-hidden="true">&middot;</span>
-                    <span>11 min read</span>
+                    <span>Salón Perkins</span>
                   </div>
                 </div>
               </div>
